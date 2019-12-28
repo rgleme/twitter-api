@@ -39,7 +39,7 @@ http://localhost
 ## Logging
 After acessing Kibana for the very first time, it is necessary to create a index pattern:\
 Send some requests to the API, so the logstash will start to consume it.\
-Access http://localhost:5601\
+Access http://localhost:5601 \
 On the left panel, click on management, then Index Patterns\
 ![Index Patterns](/pictures/index.png)\
 In Index Pattern type "logstash-*" , then click Next Step\
