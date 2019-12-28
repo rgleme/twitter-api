@@ -39,13 +39,13 @@ http://localhost
 ## Logging
 After acessing Kibana for the very first time, it is necessary to create a index pattern:\
 Send some requests to the API, so the logstash will start to consume it.\
-Access http://localhost:5601 \
-On the left panel, click on management, then Index Patterns\
+Access http://localhost:5601 ( Credentials were kept default for an example usage. username: elastic password: changeme Change it as soon as possible ) \
+On the left panel, click on management, then "Create index pattern"\
 ![Index Patterns](/pictures/index.png)\
 In Index Pattern type "logstash-*" , then click Next Step\
-![Index Patterns](/pictures/index.png)\
+![Index Patterns](/pictures/create_index.png)\
 Select "@timestamp" in Time Filter field name, then create it !\
-![Index Patterns](/pictures/index.png)\
+![Index Patterns](/pictures/timestamp.png)\
 On the left panel, click "Discover" and all the log will be shown.\
 ![Kibana Query](/pictures/query.png)\
 ## Dashboard
