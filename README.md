@@ -26,7 +26,7 @@ This project runs with:
 - ElasticSearch ( indexing logs ) - Port 9200
 - Kibana ( showing logs and dashboards ) - Port 5601
 ## Webserver
-[Api Home](/pictures/home.png)\
+![Api Home](/pictures/home.png)\
 http://localhost
 - Generate a New List\
   Collects a brand-new list, containing up to 100 tweets by given hashtags
