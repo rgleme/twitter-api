@@ -1,5 +1,5 @@
 # TWITTER API
-This API collects infos about hashtags and users from twitter
+This App collects infos about hashtags and users from twitter, stores in a DataBase and shows in a webserver hosted by Flask
 
 ## Prerequisites
 - Softwares\
@@ -25,6 +25,12 @@ This project runs with:
 - Logstash ( collecting logs ) - Port 5001
 - ElasticSearch ( indexing logs ) - Port 9200
 - Kibana ( showing logs and dashboards ) - Port 5601
+## Testing
+There are two unit tests created for this environment
+```bash
+docker exec -ti docker-compose_flask_api_1 python test_frontend.py
+docker exec -ti docker-compose_flask_api_1 python test_backend.py
+```
 ## Webserver
 ![Api Home](/pictures/home.png)\
 http://localhost
