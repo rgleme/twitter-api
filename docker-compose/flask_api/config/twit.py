@@ -20,8 +20,7 @@ class GetTwit():
             languages = []
             locations = []
             search_results = tweepy.Cursor(self.twitter_api.search, q = "#" + var, src = "typed_query", f = "live").items(self.twit_numbers)
-            for result in search_results:
-                print (result)       
+            for result in search_results:       
                 self.c.execute("insert into twit_data values('{0}','{1}','{2}','{3}','{4}','{5}')".format(result.user.screen_name, result.user.followers_count, result.lang, result.user.location, result.created_at, var))
                 self.conn.commit()
 
